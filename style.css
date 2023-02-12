@@ -1,0 +1,85 @@
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #acbba8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav a {
+    color: #030303;
+    text-decoration: none;
+    margin-right: 1em;
+  }
+  
+  .services,
+  .about-us,
+  .contact-us {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .services h2,
+  .about-us h2,
+  .contact-us h2 {
+    margin-bottom: 1em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #acbba8;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid #333;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header h1 {
+    text-align: center;
+  }
+  
+  .header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
