@@ -1,102 +1,169 @@
-/* Reset default styles */
+/* General Styles */
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-/* Set font family and color */
 body {
   font-family: 'Lato', sans-serif;
-  color: black;
-  background-color: #F2FAF8;
+  margin: 0;
 }
 
-/* Header styles */
+/* Header Styles */
+
 .header {
+  background-color: #006db0;
+  color: white;
   display: flex;
-  justify-content: flex-start;
-  align-items: bottom;
-  height: 300px;
-  background-color: #076D54;
-  background-image: url('Irfan Consulting Ltd-1 (1).png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left center;
-  z-index: 1;
-}
-
-.header img {
-  max-width: 100%;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .nav-toggle {
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: #076D54;
-  color: #F2FAF8;
-  padding: 20px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-  z-index: 2;
-}
-
-.nav-toggle:hover {
-  background-color: #F2FAF8;
-  color: #076D54;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20px;
+  width: 20px;
 }
 
 .nav-toggle span {
+  background-color: white;
   display: block;
-  width: 20px;
   height: 2px;
-  margin-bottom: 5px;
-  background-color: currentColor;
-  position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-toggle span:last-of-type {
-  margin-bottom: 0;
-}
-
-.nav-toggle.active span:first-of-type {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.nav-toggle.active span:nth-of-type(2) {
-  opacity: 0;
-}
-
-.nav-toggle.active span:last-of-type {
-  transform: rotate(-45deg) translate(5px, -5px);
+.nav-toggle:hover span {
+  background-color: #cceeff;
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: -300px;
-  width: 300px;
-  height: 100%;
-  background-color: #F2FAF8;
-  padding: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
-  z-index: 1;
-}
-
-nav.active {
-  left: 0;
+  display: none;
 }
 
 nav a {
+  color: white;
   display: block;
-  font-size: 24px;
-  font-weight: bold;
-  color: #076D54;
+  padding: 10px;
   text-decoration: none;
-  margin-bottom: 20px;
 }
 
 nav a:hover {
-  color: #2E8C6A;
+  background-color: #cceeff;
+  color: black;
+}
+
+/* Media Query for Navigation */
+
+@media screen and (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    margin-left: 10px;
+  }
+}
+
+/* Services Styles */
+
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
+
+.services p {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+.services ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services li {
+  border: 1px solid #006db0;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+/* About Us Styles */
+
+.about-us {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  margin-bottom: 20px;
+}
+
+.about-us ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us li {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Contact Us Styles */
+
+.contact-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-us h2 {
+  margin-bottom: 20px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.contact-us input[type="submit"] {
+  background-color: #006db0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.contact-us input[type="submit"]:hover {
+  background-color: #cceeff;
+}
+
+/* Footer Styles */
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
 }
