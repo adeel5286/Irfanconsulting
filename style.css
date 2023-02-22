@@ -12,11 +12,16 @@ body {
 /* Header Styles */
 
 .header {
-  background-color: #006db0;
-  color: white;
+  background-color: ##076D54;
+  color: #F2FAF8;
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  background-image: url('Irfan Consulting Ltd-1 (1).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  z-index: 1;
 }
 
 .nav-toggle {
