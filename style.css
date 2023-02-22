@@ -22,7 +22,7 @@ body {
   background-image: url('Irfan Consulting Ltd-1 (1).png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left left;
   z-index: 1; /* add z-index */
 }
 
