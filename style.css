@@ -32,7 +32,7 @@ body {
 
 .header nav {
   display: flex;
-  z-index: 0; /* add z-index */
+  z-index: 10; /* add z-index */
 }
 
 .header nav a {
