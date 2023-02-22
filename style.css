@@ -120,7 +120,7 @@ nav a:hover {
 /* About Us Styles */
 
 .about-us {
-  background-color: #006db0;
+  background-color: #F2FAF8;
   padding: 50px 20px;
   text-align: center;
 }
@@ -161,7 +161,7 @@ nav a:hover {
 }
 
 .contact-us input[type="submit"] {
-  background-color: #006db0;
+  background-color: #F2FAF8;
   color: #F2FAF8;
   cursor: pointer;
   font-size: 1.2em;
@@ -174,7 +174,7 @@ nav a:hover {
 /* Footer Styles */
 
 .footer {
-  background-color: #006db0;
+  background-color: #F2FAF8;
   padding: 20px;
   text-align: center;
 }
