@@ -1,57 +1,66 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Irfan Consultancy Ltd.</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" href="Irfan Consulting Ltd-1.png">
-  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header class="header" style="background-image: url('Irfan Consulting Ltd-1 (1).png'); width: 80%;">
-    <div class="header-content">
-     <img src="Irfan Consulting Ltd-1 (1).png" width="80% rem">
-      <nav>
-        <a href="#services">Our Services</a>
-        <a href="#about-us">About Us</a>
-        <a href="#contact-us">Contact Us</a>
-      </nav>
-    </div>
-  </header>
-
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <p>We offer a range of financial consulting services to help organizations enhance their performance and achieve their goals.</p>
-    <ul>
-      <li>Strategy Development</li>
-      <li>Operational Optimization</li>
-      <li>Financial Management</li>
-      <li>Change Management</li>
-    </ul>
-  </section>
-
-  <section id="about-us" class="about-us">
-    <ul>
-            <h2>About Us</h2>
-            <ul><li>At Irfan Consulting Ltd, we enhance output and improve organizational performance through an end-to-end analysis of key processes.</li> 
-            <li>Our team of experts specialize in optimization of processes, improving cash flow, and ensuring that technology is fit for purpose.</li></ul>
-  </section>
-
-  <section id="contact-us" class="contact-us">
-    <h2>Get in Touch</h2>
-    <form action="email.php" method="post">
-      <input type="text" name="name" placeholder="Name">
-      <input type="email" name="email" placeholder="Email">
-      <textarea name="message" placeholder="Message"></textarea>
-      <input type="submit" value="Submit">
-    </form>
-  </section>
-
-  <footer class="footer">
-    <p>Copyright &copy; Irfan Consultancy Ltd. All rights reserved.</p>
-  </footer>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>Irfan Consultancy Ltd.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Irfan Consulting Ltd-1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #F2FAF8;
+        color: black;
+      }
+      
+      .header {
+        background-color: #076D54;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" style="background-image: url('Irfan Consulting Ltd-1.png'); width: 80%;">
+      <div class="header-content">
+        <img src="Irfan Consulting Ltd-1.png" width="80% rem">
+        <nav>
+          <a href="#services">Our Services</a>
+          <a href="#about-us">About Us</a>
+          <a href="#contact-us">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+  
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <p>We offer a range of financial consulting services to help organizations enhance their performance and achieve their goals.</p>
+      <ul>
+        <li>Strategy Development</li>
+        <li>Operational Optimization</li>
+        <li>Financial Management</li>
+        <li>Change Management</li>
+      </ul>
+    </section>
+  
+    <section id="about-us" class="about-us">
+      <h2>About Us</h2>
+      <ul>
+        <li>At Irfan Consulting Ltd, we enhance output and improve organizational performance through an end-to-end analysis of key processes.</li> 
+        <li>Our team of experts specialize in optimization of processes, improving cash flow, and ensuring that technology is fit for purpose.</li>
+      </ul>
+    </section>
+  
+    <section id="contact-us" class="contact-us">
+      <h2>Get in Touch</h2>
+      <form action="email.php" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  
+    <footer class="footer">
+      <p>&copy; Irfan Consultancy Ltd. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
