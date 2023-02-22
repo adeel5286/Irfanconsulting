@@ -34,7 +34,7 @@ body {
 .header nav {
   display: flex;
   z-index: 0;
-  margin-top: auto; /* add margin-top */
+  margin-top: 20px; /* add margin-top */
 }
 
 .header nav a {
