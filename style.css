@@ -23,6 +23,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  z-index: 1; /* add z-index */
 }
 
 .header img {
@@ -31,6 +32,7 @@ body {
 
 .header nav {
   display: flex;
+  z-index: 0; /* add z-index */
 }
 
 .header nav a {
