@@ -65,18 +65,21 @@ nav a:hover {
 /* Media Query for Navigation */
 
 @media screen and (min-width: 768px) {
-  .nav-toggle {
-    display: none;
-  }
+.nav-toggle {
+display: none;
+}
 
-  nav {
-    display: flex;
-    justify-content: flex-end;
-  }
+nav {
+position: top:600pm right:10px; /* Position the menu /
+top: 50px; / Distance from the top of the page /
+right: 20px; / Distance from the right of the page */
+display: flex;
+justify-content: flex-end;
+}
 
-  nav a {
-    margin-left: 10px;
-  }
+nav a {
+margin-left: 10px;
+}
 }
 
 /* Services Styles */
