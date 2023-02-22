@@ -12,7 +12,7 @@ body {
 /* Header Styles */
 
 .header {
-  background-color: ##076D54;
+  background-color: #076D54;
   color: #F2FAF8;
   display: flex;
   justify-content: space-between;
@@ -155,8 +155,8 @@ nav a:hover {
 }
 
 .contact-us input[type="submit"] {
-  background-color: #006db0;
-  color: white;
+  background-color: #076D54;
+  color: #F2FAF8;
   cursor: pointer;
   font-size: 1.2em;
 }
