@@ -15,7 +15,7 @@ body {
 /* Header styles */
 .header {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   height: 300px;
   background-color: #076D54;
@@ -32,11 +32,11 @@ body {
 
 .header nav {
   display: flex;
-  z-index: 10; /* add z-index */
+  z-index: 0; /* add z-index */
 }
 
 .header nav a {
-  color: white;
+  color: #F2FAF8;
   text-decoration: none;
   margin: 0 20px;
 }
