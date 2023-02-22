@@ -28,13 +28,11 @@ body {
 
 .header img {
   max-width: 100%;
-  margin-right: 20px; /* Add margin to separate the image from the navigation */
 }
 
 .header nav {
   display: flex;
   z-index: 0;
-  margin-left: auto; /* Move the navigation to the right */
 }
 
 .header nav a {
