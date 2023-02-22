@@ -1,85 +1,148 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font family and color */
 body {
-    font-family: 'Proxima Nova', sans-serif;
-    background-color: #acbba8;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header {
-    background-color: #076D54;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
-  
-  .header nav a {
-    color: #030303;
-    text-decoration: none;
-    margin-right: 1em;
-  }
-  
-  .services,
-  .about-us,
-  .contact-us {
-    padding: 2em;
-    text-align: center;
-  }
-  
-  .services h2,
-  .about-us h2,
-  .contact-us h2 {
-    margin-bottom: 1em;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    background-color: #acbba8;
-    border-radius: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 80%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border-radius: 5px;
-    border: 1px solid #333;
-  }
-  
-  input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }  
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header h1 {
-    text-align: center;
-  }
-  
-  .header nav {
-    display: flex;
-    justify-content: center;
-  }
-  
+  font-family: 'Proxima Nova', sans-serif;
+  color: black;
+  background-color: #F2FAF8;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #076D54;
+  background-image: url('Irfan Consulting Ltd-1 (1).png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header img {
+  max-width: 100%;
+}
+
+.header nav {
+  display: flex;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Services section styles */
+.services {
+  padding: 50px;
+}
+
+.services h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services li {
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+/* About us section styles */
+.about-us {
+  padding: 50px;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-us ul {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.about-us li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Contact us section styles */
+.contact-us {
+  padding: 50px;
+}
+
+.contact-us h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us input,
+.contact-us textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #076D54;
+  border-radius: 5px;
+}
+
+.contact-us input[type="submit"] {
+  background-color: #076D54;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.contact-us input[type="submit"]:hover {
+  background-color: white;
+  color: #076D54;
+  border: 2px solid #076D54;
+}
+
+/* Footer styles */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #076D54;
+  color: white;
+}
