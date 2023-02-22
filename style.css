@@ -16,7 +16,7 @@ body {
 .header {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: bottom;
   height: 300px;
   background-color: #076D54;
   background-image: url('Irfan Consulting Ltd-1 (1).png');
