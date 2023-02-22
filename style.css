@@ -65,16 +65,23 @@ nav a:hover {
 /* Media Query for Navigation */
 
 @media screen and (min-width: 768px) {
-.nav-toggle {
-display: none;
-}
+  .nav-toggle {
+    display: none;
+  }
 
-nav {
-position: top:600pm right:10px; /* Position the menu /
-top: 50px; / Distance from the top of the page /
-right: 20px; / Distance from the right of the page */
-display: flex;
-justify-content: flex-end;
+  nav {
+    position: absolute;
+    bottom: 0; /* Position the menu at the bottom of the header */
+    left: 50%; /* Position the menu in the center of the header */
+    transform: translateX(-50%); /* Center the menu horizontally */
+    display: flex;
+    justify-content: center; /* Center the links inside the menu */
+    align-items: center; /* Center the menu vertically */
+  }
+
+  nav a {
+    margin-left: 10px;
+  }
 }
 
 nav a {
