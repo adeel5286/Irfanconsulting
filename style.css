@@ -12,140 +12,83 @@ body {
   background-color: #F2FAF8;
 }
 
+/* Header styles */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 300px;
   background-color: #076D54;
   background-image: url('Irfan Consulting Ltd-1 (1).png');
-  background-size: fill;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left center;
   z-index: 1;
-}
-
-.header nav {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
 }
 
 .header img {
   max-width: 100%;
 }
 
-.header nav a {
-  color: #F2FAF8;
-  text-decoration: none;
+.menu-toggle {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
   margin: 0 20px;
 }
 
-.header nav a:hover {
+nav a {
+  color: #F2FAF8;
+  text-decoration: none;
+}
+
+nav a:hover {
   text-decoration: underline;
 }
 
-
-/* Services section styles */
-.services {
-  padding: 50px;
-}
-
-.services h2 {
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.services p {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.services ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.services li {
-  font-size: 24px;
-  font-weight: 600;
-  margin-right: 40px;
-  margin-bottom: 20px;
-}
-
-/* About us section styles */
-.about-us {
-  padding: 50px;
-}
-
-.about-us h2 {
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.about-us ul {
-  list-style: none;
-  margin-bottom: 50px;
-}
-
-.about-us li {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Contact us section styles */
-.contact-us {
-  padding: 50px;
-}
-
-.contact-us h2 {
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.contact-us form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-us input,
-.contact-us textarea {
-  margin-bottom: 20px;
-  padding: 10px;
-  font-size: 18px;
-  border: 2px solid #076D54;
-  border-radius: 5px;
-}
-
-.contact-us input[type="submit"] {
-  background-color: #076D54;
-  color: white;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.contact-us input[type="submit"]:hover {
-  background-color: white;
-  color: #076D54;
-  border: 2px solid #076D54;
-}
-
-/* Footer styles */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background-color: #076D54;
-  color: white;
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  nav {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #076D54;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav li {
+    margin: 20px 0;
+  }
+  
+  .menu-toggle.active + nav {
+    left: 0;
+  }
 }
